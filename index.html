@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,18 +14,78 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <div class="wrapper">
+    <section class="home">
       <header>
         <nav>
           <img src="images/logo.png" alt="logo" class="logo" />
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active-link">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </header>
-    </div>
+      <div class="home-text">
+        <p>Hi There!<span class="rotating-emoji">👋🏻</span></p>
+        <h1>
+          I'm <span>Alon Iserovitch</span><br />
+          <span class="type-writer">Frontend Developer</span>
+        </h1>
+      </div>
+    </section>
+    <!---------------About---------->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user3.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias, fugit voluptatem consequatur amet sequi nesciunt ipsa
+              asperiores. Amet libero temporibus facere illum architecto
+              obcaecati autem, culpa reiciendis, animi omnis a. Ipsam ea quos
+              magnam quibusdam facere, dolor perferendis recusandae assumenda
+              nobis molestias officiis dicta est, a saepe, tenetur distinctio
+              autem debitis non? Odio ab ipsum aliquid consectetur ducimus
+              laudantium dolorem? Autem nisi dolore non sed aperiam
+              exercitationem, et, doloribus omnis nemo praesentium expedita
+              neque consequuntur. Laborum quibusdam animi odit consequatur
+              temporibus nihil vitae aliquam! Quam perferendis tempora est
+              tempore vel.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-link active-link">Skills</p>
+              <p class="tab-link">Education</p>
+            </div>
+
+            <div class="tab-contents skills">
+              <ul class="sub-list">
+                Web Development
+                <li>Web/App Development</li>
+                <li>Version control</li>
+                <li>Test-Driven Development</li>
+                <li>Responsive Web Design</li>
+              </ul>
+              <ul class="sub-list">
+                UI/UX
+                <li>Designing Web/App interfaces</li>
+              </ul>
+            </div>
+            <!--<div class="tab-contents Education">
+              <ul class="sub-list">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
