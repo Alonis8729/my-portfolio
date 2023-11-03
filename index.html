@@ -59,30 +59,39 @@
             </p>
 
             <div class="tab-titles">
-              <p class="tab-link active-link">Skills</p>
-              <p class="tab-link">Education</p>
+              <p class="tab-link active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-link" onclick="opentab('education')">Education</p>
             </div>
 
-            <div class="tab-contents skills">
+            <div class="tab-contents" id="skills">
               <ul class="sub-list">
-                Web Development
+                <span>Web Development</span>
                 <li>Web/App Development</li>
                 <li>Version control</li>
                 <li>Test-Driven Development</li>
                 <li>Responsive Web Design</li>
               </ul>
               <ul class="sub-list">
-                UI/UX
+                <span>UI/UX</span>
                 <li>Designing Web/App interfaces</li>
               </ul>
             </div>
-            <!--<div class="tab-contents Education">
+            <div class="tab-contents" id="eductaion">
               <ul class="sub-list">
-                <li></li>
-                <li></li>
-                <li></li>
+                <span>General Information</span>
+                <li>B.Sc Computer Science (2022-2026)</li>
+                <li>GPA: 91</li>
+                <li>The Open University</li>
               </ul>
-            </div> -->
+              <ul class="sub-list">
+                <span>Notable Courses</span>
+                <li>Introduction to Computer Science</li>
+                <li>Data and Algorithms</li>
+                <li>System Programming Lab</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
