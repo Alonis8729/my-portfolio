@@ -1,6 +1,8 @@
 :root{
 --white:#fff;
 --turquoise:#2edc9c;
+--darker-turq:#1abc80;
+--transparent:rgba(255, 255, 255, 0.5);
 }
 
 html{
@@ -19,7 +21,7 @@ body {
 
 /*MAIN CONTAINER*/
 
-.wrapper {
+.home {
     width: 100%;
     height: 100vh;
     background: url(images/background.png);
@@ -55,16 +57,161 @@ nav ul li,nav ul a {
 
 nav ul li a::after {
     content: '';
-    width: 100%;
+    width: 0;
     height: 3px;
     background: var(--turquoise);
     position: absolute;
     left: 0;
     bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a.active-link::after {
+    width: 100%;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.home-text {
+    margin-top: 20%;
+    font-size: 2.5rem;
+    padding: 0 10%;
+}
+
+.rotating-emoji {
+    display: inline-block;
+    animation: rotation 2s infinite alternate;
+    transform-origin: 70% 70%;
+    vertical-align: 0.2rem;
+}
+
+@keyframes rotation{
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.home-text h1 {
+    font-size: 4rem;
+}
+
+.home-text h1 span {
+    color: var(--turquoise);
+}
+
+.home-text .type-writer {
+    white-space: nowrap;
+    display: inline-block;
+    letter-spacing: .1em;
+    width: 100%;
+    overflow: hidden;
+    color: var(--darker-turq);
+    animation: typing 3s steps(17),
+                cursor step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 10%0;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
 }
 
 
+/*-----ABOUT-----*/
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    color: var(--transparent);
+    flex-wrap: wrap;
+}
 
+.about-col-1 {
+    flex-basis: 35%;
+}
 
+.about-col-1 img {
+    width: 100%;
+    border-radius: 20px;
+}
 
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 4rem;
+    color: var(--white);
+}
+
+.about-text {
+    font-size: 1.2rem;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tab-link::after {
+    content: '';
+    position: absolute;
+    background: var(--turquoise);
+    bottom: -6px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    transition: 0.5s;
+}
+
+.tab-link:hover::after {
+    width: 100%;
+}
+
+.tab-link.active-link::after {
+    width: 100%;
+}
