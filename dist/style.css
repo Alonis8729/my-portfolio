@@ -1,7 +1,7 @@
 :root{
 --white:#fff;
 --turquoise:#2edc9c;
---darker-turq:#1abc80;
+--darker-turq:#13a26d;
 --transparent:rgba(255, 255, 255, 0.5);
 }
 
@@ -214,4 +214,20 @@ nav ul li a:hover::after {
 
 .tab-link.active-link::after {
     width: 100%;
+}
+
+.sub-list {
+    margin-bottom: 20px;
+}
+
+.tab-contents span {
+    color: var(--darker-turq);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.tab-contents li {
+    list-style: none;
+    margin: 5px 0;
 }
