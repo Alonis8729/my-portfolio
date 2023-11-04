@@ -17,7 +17,13 @@ body {
 }
 
 /*GENERAL*/
+.hide {
+    display: none !important;
+}
 
+.show {
+    display: block !important;
+}
 
 /*MAIN CONTAINER*/
 
@@ -132,7 +138,7 @@ nav ul li a:hover::after {
     width: 100%;
     overflow: hidden;
     color: var(--darker-turq);
-    animation: typing 3s steps(17),
+    animation: typing 2s steps(17) infinite alternate,
                 cursor step-end infinite alternate;
 }
 
@@ -140,8 +146,9 @@ nav ul li a:hover::after {
     from {
         width: 0;
     }
+
     to {
-        width: 10%0;
+        width: 100%;
     }
 }
 
@@ -191,8 +198,7 @@ nav ul li a:hover::after {
 
 .tab-link {
     font-size: 1.2rem;
-    font-weight: 600;
-    margin: 20px;
+    margin: 20px 20px 0 0 ;
     position: relative;
     cursor: pointer;
 }
@@ -230,4 +236,38 @@ nav ul li a:hover::after {
 .tab-contents li {
     list-style: none;
     margin: 5px 0;
+}
+
+#skills {
+    display: flex ;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-icons{
+    display: grid;
+    width: 60%; 
+    row-gap: 2rem;  
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+.icon-item{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-item p{
+    font-size: 0.7rem; 
+    margin-top: 10px;   
+}
+
+.icon-item img {
+    width: 45px;
+    height: 45px;
 }
