@@ -166,11 +166,18 @@ nav ul li a:hover::after {
 
 
 /*-----ABOUT-----*/
+#about {
+    padding: 30px 0;
+}
+
+
+.container {
+    padding: 10px 10%;
+}
 
 .row {
     display: flex;
     justify-content: space-between;
-    padding: 0 10%;
     color: var(--transparent);
     flex-wrap: wrap;
 }
@@ -214,7 +221,7 @@ nav ul li a:hover::after {
 .tab-link::after {
     content: '';
     position: absolute;
-    background: var(--turquoise);
+    background: var(--darker-turq);
     bottom: -6px;
     left: 0;
     height: 3px;
@@ -233,8 +240,6 @@ nav ul li a:hover::after {
 .sub-list {
     margin-bottom: 20px;
 }
-
-
 
 .tab-contents span {
     color: var(--darker-turq);
@@ -282,4 +287,75 @@ nav ul li a:hover::after {
 .icon-item img {
     width: 45px;
     height: 45px;
+}
+
+/*******Portfolio******/
+
+#portfolio{
+    padding: 60px 0;
+}
+
+.work-list {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.work-item {
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work-item img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.work-item img:hover {
+    transform: scale(1.1);
+}
+
+.work-item:hover .description {
+    height: 100%;
+}
+
+.description {
+    width: 100%;
+    height: 0;
+    background:linear-gradient(rgba(0,0,0,0.5),var(--darker-turq));
+    position: absolute;
+    bottom: 0;
+    left:0;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    transition: height 0.5s;
+
+}
+
+
+.description h3 {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.description p {
+    padding: 0 60px;
+    color: var(--white);
+}
+
+.description a {
+    text-decoration: none;
+    background-color: var(--white);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    padding: 15px;
+    color: var(--darker-turq);
 }
