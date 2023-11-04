@@ -59,13 +59,11 @@
             </p>
 
             <div class="tab-titles">
-              <p class="tab-link active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-link" onclick="opentab('education')">Education</p>
+              <p class="tab-link active-link" tabindex="0">Skills</p>
+              <p class="tab-link" tab-index="1">Education</p>
             </div>
 
-            <div class="tab-contents" id="skills">
+            <div class="tab-contents" tabindex="0" id="skills">
               <ul class="sub-list">
                 <span>Web Development</span>
                 <li>Web/App Development</li>
@@ -78,7 +76,7 @@
                 <li>Designing Web/App interfaces</li>
               </ul>
             </div>
-            <div class="tab-contents" id="eductaion">
+            <div class="tab-contents hide" id="eductaion" tabindex="1">
               <ul class="sub-list">
                 <span>General Information</span>
                 <li>B.Sc Computer Science (2022-2026)</li>
@@ -88,7 +86,7 @@
               <ul class="sub-list">
                 <span>Notable Courses</span>
                 <li>Introduction to Computer Science</li>
-                <li>Data and Algorithms</li>
+                <li>Data Structures and Algorithms</li>
                 <li>System Programming Lab</li>
               </ul>
             </div>
