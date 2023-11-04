@@ -5,10 +5,8 @@ const dom = (() => {
 
     tabLinks.forEach((link) => link.classList.toggle('active-link'))
     tabContents.forEach((tab) => {
-      tab.classList.toggle('show')
       tab.classList.toggle('hide')
     })
-
   }
 
   return {
