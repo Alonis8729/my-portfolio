@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <script src="main.js" defer></script>
   </head>
   <body>
     <section class="home">
@@ -59,24 +59,75 @@
             </p>
 
             <div class="tab-titles">
-              <p class="tab-link active-link" tabindex="0">Skills</p>
+              <p class="tab-link active-link" tab-index="0">Skills</p>
               <p class="tab-link" tab-index="1">Education</p>
             </div>
 
-            <div class="tab-contents" tabindex="0" id="skills">
-              <ul class="sub-list">
-                <span>Web Development</span>
-                <li>Web/App Development</li>
-                <li>Version control</li>
-                <li>Test-Driven Development</li>
-                <li>Responsive Web Design</li>
-              </ul>
-              <ul class="sub-list">
-                <span>UI/UX</span>
-                <li>Designing Web/App interfaces</li>
-              </ul>
+            <div class="tab-contents" tab-index="0" id="skills">
+              <div>
+                <ul class="sub-list">
+                  <span>Web Development</span>
+                  <li>Web/App Development</li>
+                  <li>Version control</li>
+                  <li>Test-Driven Development</li>
+                  <li>Responsive Web Design</li>
+                </ul>
+                <ul class="sub-list">
+                  <span>UI/UX</span>
+                  <li>Designing Web/App interfaces</li>
+                </ul>
+              </div>
+              <div class="skills-icons">
+                <div class="icon-item">
+                  <span><img src="./images/html.png" /></span>
+                  <p>HTML</p>
+                </div>
+                <div class="icon-item">
+                  <span class="icon-item"><img src="./images/css.png" /></span>
+                  <p>CSS</p>
+                </div>
+                <div class="icon-item">
+                  <span class="icon-item"><img src="./images/js.png" /></span>
+                  <p>JavaScript</p>
+                </div>
+                <div class="icon-item">
+                  <span class="icon-item"
+                    ><img src="./images/react.png"
+                  /></span>
+                  <p>React</p>
+                </div>
+                <div class="icon-item">
+                  <span class="icon-item"
+                    ><img src="./images/java.png" alt=""
+                  /></span>
+                  <p>Java</p>
+                </div>
+
+                <div class="icon-item">
+                  <span class="icon-item"><img src="./images/git.png" /></span>
+                  <p>Git</p>
+                </div>
+                <div class="icon-item">
+                  <span class="icon-item"
+                    ><img src="./images/jest-js-icon.png"
+                  /></span>
+                  <p>Jest</p>
+                </div>
+                <div class="icon-item">
+                  <span class="icon-item"
+                    ><img src="./images/webpack.png" alt="webpack"
+                  /></span>
+                  <p>Webpack</p>
+                </div>
+                <div class="icon-item">
+                  <span class="icon-item"
+                    ><img src="./images/tailwind.png"
+                  /></span>
+                  <p>Tailwind</p>
+                </div>
+              </div>
             </div>
-            <div class="tab-contents hide" id="eductaion" tabindex="1">
+            <div class="tab-contents hide" id="eductaion" tab-index="1">
               <ul class="sub-list">
                 <span>General Information</span>
                 <li>B.Sc Computer Science (2022-2026)</li>
