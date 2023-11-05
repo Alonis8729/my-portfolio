@@ -302,14 +302,39 @@ nav ul li a:hover::after {
 
 .skills-carousel{
     overflow: hidden;
-    padding: 60px 0;
+    padding: 10px 0;
     white-space: nowrap;
     max-width: 500px;
+    position: relative;
+
 }
 
 .icons-list {
     display: inline-flex;
     animation: slider 25s infinite linear;
+}
+
+.skills-carousel::before,.skills-carousel:after {
+    position: absolute;
+    width: 70px;
+    height: 100px;
+    top: 60px;
+    content: '';
+    z-index: 2;
+}
+
+.skills-carousel::before{
+    background:linear-gradient(to left,rgba(0,0,0,0),rgba(0,0,0,1));
+    left: 0;
+}
+
+.skills-carousel::after {
+    background:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,1));
+    right: 0;
+}
+
+.skills-carousel:hover .icons-list{
+    animation-play-state: paused;
 }
 
 .icon-item{
