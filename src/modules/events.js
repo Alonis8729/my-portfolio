@@ -2,6 +2,8 @@
 import dom from './dom'
 
 const events = (() => {
+  const menu = document.querySelector('.menu')
+
   function clickListener() {
     document.addEventListener('click', (event) => {
       const { target } = event
@@ -11,6 +13,12 @@ const events = (() => {
         if (!target.classList.contains('active-link')) {
           dom.openTab()
         }
+      }
+
+      if (target.classList.contains('menu-btn')) {
+        menu.style.right = '0'
+      } else if (target.classList.contains('close-btn')) {
+        menu.style.right = '-200px'
       }
     })
   }
