@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable no-console */
 import dom from './dom'
 
@@ -18,7 +19,7 @@ const events = (() => {
       if (target.classList.contains('menu-btn')) {
         menu.style.right = '0'
       } else if (target.classList.contains('close-btn')) {
-        menu.style.right = '-200px'
+        menu.style.left = '-200px'
       }
     })
   }
