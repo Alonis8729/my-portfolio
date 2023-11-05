@@ -66,66 +66,73 @@
             </div>
 
             <div class="tab-contents" tab-index="0" id="skills">
-              <div class="info-div">
-                <ul class="sub-list">
-                  <span>Web Development</span>
-                  <li>- Web/App Development</li>
-                  <li>- Version control</li>
-                  <li>- Test-Driven Development</li>
-                  <li>- Responsive Web Design</li>
-                </ul>
-                <ul class="sub-list">
-                  <span>UI/UX</span>
-                  <li>- Designing Web/App interfaces</li>
-                </ul>
-              </div>
-              <div class="skills-icons">
-                <div class="icon-item">
-                  <span><img src="./images/html.png" /></span>
-                  <p>HTML</p>
-                </div>
-                <div class="icon-item">
-                  <span class="icon-item"><img src="./images/css.png" /></span>
-                  <p>CSS</p>
-                </div>
-                <div class="icon-item">
-                  <span class="icon-item"><img src="./images/js.png" /></span>
-                  <p>JavaScript</p>
-                </div>
-                <div class="icon-item">
-                  <span class="icon-item"
-                    ><img src="./images/react.png"
-                  /></span>
-                  <p>React</p>
-                </div>
-                <div class="icon-item">
-                  <span class="icon-item"
-                    ><img src="./images/java.png" alt=""
-                  /></span>
-                  <p>Java</p>
-                </div>
-
-                <div class="icon-item">
-                  <span class="icon-item"><img src="./images/git.png" /></span>
-                  <p>Git</p>
-                </div>
-                <div class="icon-item">
-                  <span class="icon-item"
-                    ><img src="./images/jest-js-icon.png"
-                  /></span>
-                  <p>Jest</p>
-                </div>
-                <div class="icon-item">
-                  <span class="icon-item"
-                    ><img src="./images/webpack.png" alt="webpack"
-                  /></span>
-                  <p>Webpack</p>
-                </div>
-                <div class="icon-item">
-                  <span class="icon-item"
-                    ><img src="./images/tailwind.png"
-                  /></span>
-                  <p>Tailwind</p>
+              <ul class="sub-list">
+                <span>Web Development</span>
+                <li>- Web/App Development</li>
+                <li>- Version control</li>
+                <li>- Test-Driven Development</li>
+                <li>- Responsive Web Design</li>
+              </ul>
+              <ul class="sub-list">
+                <span>UI/UX</span>
+                <li>- Designing Web/App interfaces</li>
+              </ul>
+              <div class="skills-carousel">
+                <div class="icons-list">
+                  <div class="icon-item">
+                    <span
+                      ><img
+                        src="./images/html.png"
+                        style="vertical-align: -0.55rem"
+                    /></span>
+                    <p>HTML</p>
+                  </div>
+                  <div class="icon-item">
+                    <span class="icon-item"
+                      ><img src="./images/css.png"
+                    /></span>
+                    <p>CSS</p>
+                  </div>
+                  <div class="icon-item">
+                    <span class="icon-item"><img src="./images/js.png" /></span>
+                    <p>JavaScript</p>
+                  </div>
+                  <div class="icon-item">
+                    <span class="icon-item"
+                      ><img src="./images/react.png"
+                    /></span>
+                    <p>React</p>
+                  </div>
+                  <div class="icon-item">
+                    <span class="icon-item"
+                      ><img src="./images/java.png" alt=""
+                    /></span>
+                    <p>Java</p>
+                  </div>
+                  <div class="icon-item">
+                    <span class="icon-item"
+                      ><img src="./images/git.png"
+                    /></span>
+                    <p>Git</p>
+                  </div>
+                  <div class="icon-item">
+                    <span class="icon-item"
+                      ><img src="./images/jest-js-icon.png"
+                    /></span>
+                    <p>Jest</p>
+                  </div>
+                  <div class="icon-item">
+                    <span class="icon-item"
+                      ><img src="./images/webpack.png" alt="webpack"
+                    /></span>
+                    <p>Webpack</p>
+                  </div>
+                  <div class="icon-item">
+                    <span class="icon-item"
+                      ><img src="./images/tailwind.png"
+                    /></span>
+                    <p>Tailwind</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -250,5 +257,10 @@
         </div>
       </div>
     </section>
+
+    <script>
+      var copy = document.querySelector('.icons-list').cloneNode(true)
+      document.querySelector('.skills-carousel').appendChild(copy)
+    </script>
   </body>
 </html>
