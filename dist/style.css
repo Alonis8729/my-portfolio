@@ -1,6 +1,6 @@
 :root{
 --white:#fff;
---turquoise:#2dd597;
+--turquoise:#36cb95;
 --darker-turq:#13a26d;
 --transparent:rgba(255, 255, 255, 0.5);
 --light-black:#262626;
@@ -216,6 +216,10 @@ nav ul li a:hover::after {
     flex-basis: 60%;   
     display: flex; 
     flex-direction: column;
+}
+
+.about-col-2 .sub-title {
+    margin-bottom: 0;
 }
 
 .sub-title {
@@ -467,7 +471,7 @@ nav .fa-solid {
     }
 
     .home-text {
-        margin-top: 80%;
+        margin-top: 100%;
         font-size: 1.5rem;
     }
     .home-text h1{
@@ -490,6 +494,8 @@ nav .fa-solid {
         padding-top:50px ;
         display: flex;
         flex-direction: column;
+        z-index: 2;
+        transition: right 0.5s;
     }
 
     nav ul li {
@@ -499,8 +505,8 @@ nav .fa-solid {
 
     nav ul .fa-solid {
         position: absolute;
-        right: 25px;
-        top: 25px;
+        right: 40px;
+        top: 40px;
     }
 
     nav ul li a::after {
@@ -508,9 +514,37 @@ nav .fa-solid {
     }
 
     #home {
+        padding:0 20px 0;
         
-        margin: 0;
-        padding: 0;
+    }
+
+    .sub-title {
+        font-size: 2.2rem;
+    }
+
+    .about-col-1,.about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .tab-link {
+        font-size: 1rem;
+    }
+
+    .tab-titles {
+        justify-content: space-around ;
+    }
+
+    .tab-contents span {
+        font-size: 1rem;
+    }
+   
+    .form {
+        margin-top: 50px;
+
     }
 
 }
