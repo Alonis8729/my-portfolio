@@ -9,7 +9,6 @@ const events = (() => {
   function clickListener() {
     document.addEventListener('click', (event) => {
       const { target } = event;
-      console.log(target);
       // Click on About tab link
       if (target.classList.contains('tab-link')) {
         if (!target.classList.contains('active-link')) {
