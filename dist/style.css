@@ -241,6 +241,7 @@ nav ul li a:hover::after {
 }
 .about-col-2>p {
     font-size: 1.2rem;
+    padding-right: 50px;
 }
 
 .about-col-2 .sub-title {
@@ -553,6 +554,15 @@ nav .fa-solid {
 
 
 @media screen and (max-width:600px) {
+
+    html{
+        scroll-snap-type:unset;
+    }
+      
+    section {
+        scroll-snap-align: unset;
+    }
+    
    
     #home {
         background: url(images/small-bg.png);
@@ -619,7 +629,11 @@ nav .fa-solid {
 
     .about-col-2 {
         font-size: 16px;
+    }
+
+    .about-col-2 > p {
         line-height: 1.25;
+        padding-right: 15px ;
     }
 
     .skills-carousel{
@@ -647,5 +661,8 @@ nav .fa-solid {
         flex-basis: 100%;
     }
 
+    .contact-left p {
+        align-items: center;
+    }
 
 }
