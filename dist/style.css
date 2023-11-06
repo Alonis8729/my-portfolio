@@ -49,6 +49,10 @@ ul {
     list-style: none;
   }
 
+.expanded {
+    height: 100% !important;
+}
+
 .btn {
     padding: 10px 50px;
     outline: none;
@@ -398,9 +402,34 @@ nav ul li a:hover::after {
     transition: transform 0.5s;
 }
 
+/*
 .work-item img:hover {
     transform: scale(1.1);
 }
+*/
+
+.visual-cue {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.work-item:hover .visual-cue {
+    opacity: 0;
+  }
+
+  .visual-cue img {
+   width: 48px;
+   height: 48px;
+  }
 
 .work-item:hover .description {
     height: 100%;
@@ -423,7 +452,6 @@ nav ul li a:hover::after {
     transition: height 0.5s;
 
 }
-
 
 .description h3 {
     padding: 0;
