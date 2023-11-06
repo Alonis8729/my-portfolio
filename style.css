@@ -28,6 +28,7 @@ body {
     background-color: #080808;
     color: var(--white);
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 section {
@@ -491,6 +492,7 @@ nav ul li a:hover::after {
 .contact-left p {
     font-size: 1.5rem;
     display: flex;
+    align-items: center;
 }
 
 .contact-left p i {
