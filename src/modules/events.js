@@ -16,6 +16,13 @@ const events = (() => {
         }
       }
 
+      if (target.classList.contains('menu-link')) {
+        if (!target.classList.contains('active-link')) {
+          dom.openMenuLink(target)
+        }
+      }
+
+      // Navbar manipulation
       if (target.classList.contains('menu-btn')) {
         menu.style.right = '0'
       } else if (target.classList.contains('close-btn')) {
