@@ -7,6 +7,9 @@ const events = (() => {
   const menu = document.querySelector('.menu');
 
   function clickListener() {
+    const copy = document.querySelector('.icons-list').cloneNode(true);
+    document.querySelector('.skills-carousel').appendChild(copy);
+
     document.addEventListener('click', (event) => {
       const { target } = event;
       // Click on About tab link
