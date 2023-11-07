@@ -520,6 +520,15 @@ nav ul li a:hover::after {
     font-size: 1.5rem;
 }
 
+/*Safari adaptation*/
+@supports (-webkit-touch-callout: none) {
+    .contact-left p i {
+        color: var(--turquoise);
+        margin-right: 15px;
+        font-size: 1.5rem;
+    }
+}
+
 .contact-right {
     flex-basis: 60%;
 }
