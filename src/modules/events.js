@@ -5,6 +5,8 @@ import dom from './dom';
 
 const events = (() => {
   const menu = document.querySelector('.menu');
+  const sections = document.querySelectorAll('section');
+  const menuLinks = document.querySelectorAll('.menu-link');
 
   function clickListener() {
     const copy = document.querySelector('.icons-list').cloneNode(true);
@@ -30,6 +32,24 @@ const events = (() => {
         menu.style.right = '-200px';
       }
     });
+  }
+
+  window.onscroll = () =>{
+    sections.forEach((section)=>{
+      let top = window.scrollY;
+      let offset = section.offsetTop - 150;
+      let height = section.offsetHeight;
+      let id = section.getAttribute('id');
+
+      if( top >= offset && top < offset+ height){
+        menuLinks.forEach(link=>{
+          link.classList.remove('active-link');
+          if (link.getAttribute('href').includes(id)) {
+              link.classList.add('active-link');
+          }
+        })
+      }
+    })
   }
 
   return {
