@@ -542,6 +542,12 @@ nav ul li a:hover::after {
 }
 
 
+
+.form input,form textarea,
+.form::placeholder {
+    color: var(--white);
+}
+
 .form input,.form textarea {
  width: 100%;
  outline: none;
