@@ -83,7 +83,6 @@ ul {
     background: url(images/background.png);
     background-position: top;
     background-size: cover;
-
 }
 
 nav {
@@ -97,6 +96,7 @@ nav {
 nav h1 {
     font-size: 3rem;
     letter-spacing: 0.3rem;
+    margin: 0;
 }
 
 nav h1 span {
