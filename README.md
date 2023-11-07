@@ -24,7 +24,8 @@ This portfolio website serves as a platform to display my skills, experiences, a
 
 ## Screenshots
 
-![image](https://github.com/Alonso8729/my-portfolio/assets/119747342/e68c30e0-4a68-44c2-a179-4445de6958f1)
+![image](https://github.com/Alonso8729/my-portfolio/assets/119747342/7848fbe0-002f-448e-8e02-2a396e6fbc85)
+
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/your-username/portfolio.git`
