@@ -622,6 +622,10 @@ nav .fa-solid {
         width: 150px;
     }
 
+    nav {
+        padding: 2px 7%;
+    }
+
     nav ul {
         background: var(--darker-turq);
         position: fixed;
@@ -678,14 +682,18 @@ nav .fa-solid {
     }
 
     .tab-link {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
 
     .tab-contents span {
+        font-size: 1.1rem;
+    }
+    
+    .tab-contents li {
         font-size: 1rem;
     }
-   
+
     .form {
         margin-top: 50px;
 
