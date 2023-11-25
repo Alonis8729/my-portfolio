@@ -536,7 +536,9 @@ nav ul li a:hover::after {
     margin-bottom: 5rem;
 }
 
-
+.contact-left p,#message {
+    font-family: 'Open Sans', sans-serif;
+}
 
 .form input,
 form textarea,
