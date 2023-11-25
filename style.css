@@ -1,12 +1,12 @@
-:root{
---white:#fff;
---turquoise:#36cb95;
---darker-turq:#13a26d;
---transparent:rgba(255, 255, 255, 0.5);
---light-black:#262626;
+:root {
+    --white: #fff;
+    --turquoise: #36cb95;
+    --darker-turq: #13a26d;
+    --transparent: rgba(255, 255, 255, 0.5);
+    --light-black: #262626;
 }
 
-html{
+html {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -14,12 +14,12 @@ html{
 }
 
 ::-webkit-scrollbar {
-   background-color: var(--light-black);
-   width: 0.5vw;
+    background-color: var(--light-black);
+    width: 0.5vw;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #555; 
+    background-color: #555;
     width: 0.5vw;
 }
 
@@ -48,7 +48,7 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
-  }
+}
 
 .expanded {
     height: 100% !important;
@@ -67,7 +67,7 @@ ul {
     transition: background-color 0.3s;
     cursor: pointer;
     width: fit-content;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .btn:hover {
@@ -90,7 +90,7 @@ nav {
     justify-content: space-between;
     padding: 20px 10%;
     align-items: center;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
 }
 
 nav h1 {
@@ -113,12 +113,13 @@ nav ul {
     display: flex;
 }
 
-nav ul li,nav ul a {
+nav ul li,
+nav ul a {
     text-decoration: none;
     color: var(--white);
     font-size: 1.2rem;
-    margin: 0.8rem ;
-    list-style: none; 
+    margin: 0.8rem;
+    list-style: none;
     position: relative;
 }
 
@@ -154,11 +155,11 @@ nav ul li a:hover::after {
     vertical-align: 0.2rem;
 }
 
-@keyframes rotation{
+@keyframes rotation {
     0% {
         transform: rotate(0deg);
     }
-    
+
     10% {
         transform: rotate(14deg);
     }
@@ -179,7 +180,7 @@ nav ul li a:hover::after {
         transform: rotate(10deg);
     }
 
-    100%{
+    100% {
         transform: rotate(0deg);
     }
 }
@@ -190,7 +191,7 @@ nav ul li a:hover::after {
 
 .home-text h1 span {
     color: var(--turquoise);
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .home-text .type-writer {
@@ -201,7 +202,7 @@ nav ul li a:hover::after {
     overflow: hidden;
     color: var(--turquoise);
     animation: typing 3s steps(30) infinite alternate,
-                cursor step-end infinite alternate;
+        cursor step-end infinite alternate;
 }
 
 @keyframes typing {
@@ -248,10 +249,11 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 {
-    flex-basis: 60%;   
-    display: flex; 
+    flex-basis: 60%;
+    display: flex;
     flex-direction: column;
 }
+
 .about-col-2>p {
     font-size: 1.2rem;
     padding-right: 50px;
@@ -278,7 +280,7 @@ nav ul li a:hover::after {
 
 .tab-link {
     font-size: 1.2rem;
-    margin: 20px 20px 0 0 ;
+    margin: 20px 20px 0 0;
     position: relative;
     cursor: pointer;
 }
@@ -324,7 +326,7 @@ nav ul li a:hover::after {
 }
 
 #skills {
-    display: flex ;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
@@ -332,15 +334,16 @@ nav ul li a:hover::after {
 }
 
 @keyframes slider {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(-100%);
     }
 }
 
-.skills-carousel{
+.skills-carousel {
     overflow: hidden;
     padding: 10px 0;
     white-space: nowrap;
@@ -353,7 +356,8 @@ nav ul li a:hover::after {
     animation: slider 25s infinite linear;
 }
 
-.skills-carousel::before,.skills-carousel:after {
+.skills-carousel::before,
+.skills-carousel:after {
     position: absolute;
     width: 100px;
     height: 200px;
@@ -362,21 +366,21 @@ nav ul li a:hover::after {
     z-index: 2;
 }
 
-.skills-carousel::before{
-    background:linear-gradient(to left,rgba(0, 0, 0, 0),rgba(0,0,0,0.6));
+.skills-carousel::before {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
     left: 0;
 }
 
 .skills-carousel::after {
-    background:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.6));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
     right: 0;
 }
 
-.skills-carousel:hover .icons-list{
+.skills-carousel:hover .icons-list {
     animation-play-state: paused;
 }
 
-.icon-item{
+.icon-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -384,8 +388,8 @@ nav ul li a:hover::after {
     margin-right: 30px;
 }
 
-.icon-item p{
-    font-size: 0.7rem; 
+.icon-item p {
+    font-size: 0.7rem;
 }
 
 .icon-item img {
@@ -395,18 +399,18 @@ nav ul li a:hover::after {
 
 /*******Portfolio******/
 
-#portfolio{
+#portfolio {
     padding: 10px 0;
 }
 
 #portfolio p {
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .work-list {
     display: grid;
     gap: 40px;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .work-item {
@@ -434,10 +438,10 @@ nav ul li a:hover::after {
 .description {
     width: 100%;
     height: 0;
-    background:linear-gradient(rgba(0,0,0,0.5),var(--darker-turq));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), var(--darker-turq));
     position: absolute;
     bottom: 0;
-    left:0;
+    left: 0;
     text-align: center;
     overflow: hidden;
     display: flex;
@@ -451,12 +455,18 @@ nav ul li a:hover::after {
 
 .description h3 {
     padding: 0;
-    margin:0;
+    margin: 10px 0;
 }
 
 .description p {
     padding: 0 60px;
     color: var(--white);
+    margin-top: 0;
+}
+
+.langs {
+    font-size: 'Montserrat';
+
 }
 
 .description a {
@@ -518,7 +528,7 @@ nav ul li a:hover::after {
     margin-right: 5px;
 }
 
-.social-icons img:hover{
+.social-icons img:hover {
     transform: scale(1.1);
 }
 
@@ -528,20 +538,22 @@ nav ul li a:hover::after {
 
 
 
-.form input,form textarea,
+.form input,
+form textarea,
 .form::placeholder {
     color: var(--white);
 }
 
-.form input,.form textarea {
- width: 100%;
- outline: none;
- background: var(--light-black);
- padding: 15px;
- margin: 15px 0;
- font-size: 1.1rem;
- border: 1px solid transparent;
- border-radius: 8px;
+.form input,
+.form textarea {
+    width: 100%;
+    outline: none;
+    background: var(--light-black);
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 1.1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
 }
 
 form .btn2 {
@@ -550,6 +562,7 @@ form .btn2 {
     display: flex;
     align-self: center;
 }
+
 /******MEDIA QUERY*****/
 nav .fa-solid {
     display: none;
@@ -564,15 +577,15 @@ nav .fa-solid {
 
 @media screen and (max-width:600px) {
 
-    html{
-        scroll-snap-type:unset;
+    html {
+        scroll-snap-type: unset;
     }
-      
+
     section {
         scroll-snap-align: unset;
     }
-    
-   
+
+
     #home {
         background: url(images/small-bg.png);
         background-position: 50%;
@@ -584,7 +597,8 @@ nav .fa-solid {
         margin-top: 100%;
         font-size: 1.5rem;
     }
-    .home-text h1{
+
+    .home-text h1 {
         font-size: 2rem;
     }
 
@@ -594,7 +608,7 @@ nav .fa-solid {
         cursor: pointer;
     }
 
-    img.logo{
+    img.logo {
         width: 150px;
     }
 
@@ -609,7 +623,7 @@ nav .fa-solid {
         right: -200px;
         width: 200px;
         height: 100vh;
-        padding-top:50px ;
+        padding-top: 50px;
         display: flex;
         flex-direction: column;
         z-index: 2;
@@ -636,7 +650,8 @@ nav .fa-solid {
         font-size: 2.2rem;
     }
 
-    .about-col-1,.about-col-2 {
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
 
@@ -644,28 +659,29 @@ nav .fa-solid {
         font-size: 16px;
     }
 
-    .about-col-2 > p {
+    .about-col-2>p {
         line-height: 1.25;
-        padding-right: 15px ;
+        padding-right: 15px;
     }
 
-    .skills-carousel{
+    .skills-carousel {
         max-width: 250px;
     }
 
-    .skills-carousel::before,.skills-carousel:after {
+    .skills-carousel::before,
+    .skills-carousel:after {
         width: 30px;
     }
 
     .tab-link {
         font-size: 1.2rem;
     }
-    
+
 
     .tab-contents span {
         font-size: 1.1rem;
     }
-    
+
     .tab-contents li {
         font-size: 1rem;
     }
@@ -674,7 +690,9 @@ nav .fa-solid {
         margin-top: 50px;
 
     }
-    .contact-left,.contact-right{
+
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
 
