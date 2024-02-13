@@ -59,11 +59,11 @@ ul {
     outline: none;
     border-radius: 5px;
     color: var(--white);
-    border: 1px solid var(--turquoise);
+    border: 3px solid var(--turquoise);
     text-decoration: none;
     font-family: inherit;
     font-size: 1.2rem;
-    background-color: var(--turquoise);
+
     transition: background-color 0.3s;
     cursor: pointer;
     width: fit-content;
@@ -71,7 +71,7 @@ ul {
 }
 
 .btn:hover {
-    background-color: var(--darker-turq);
+    background-color: var(--turquoise);
 }
 
 
@@ -574,6 +574,7 @@ form .btn2 {
     margin-top: 15px;
     display: flex;
     align-self: center;
+    background-color: black;
 }
 
 /******MEDIA QUERY*****/
